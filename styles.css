@@ -31,6 +31,31 @@
   color: transparent;
 }
 
+#menu > div:first-child {
+  cursor: pointer;
+  /*transition: all .2s ease-in-out;*/
+}
+
+#menu > div:first-child:hover {
+  animation-name: change-color-size;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  /* transform: scale(1.2);
+  background-color: #ff1494; */
+}
+
+@keyframes change-color-size {
+  0% {
+    transform: scale(1);
+    background-color: #ff1494;
+  }
+
+  100% {
+    transform: scale(1.2);
+    background-color: #ff1494;
+  }
+}
+
 #menu > div:nth-child(2) {
   flex-grow: 2;
 }
