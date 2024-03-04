@@ -131,3 +131,30 @@
   }
 }
 
+@media (max-width: 575.98px) {
+
+  #menu {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  #menu > div {
+    width: 90%;
+  }
+
+  #content {
+
+    flex-direction: column;
+  }
+
+  #articles {
+    flex-flow: column wrap;
+
+  }
+  #articles > article {
+    width: 90%;
+  
+  }
+
+}
+
