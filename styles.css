@@ -110,6 +110,10 @@
 
 @media (max-width: 991.98px) {
 
+  body{
+    background-color: bisque;
+  }
+
   #container {
     border-top: 0px;
     border-bottom: 0px;
@@ -132,6 +136,10 @@
 }
 
 @media (max-width: 575.98px) {
+
+  body{
+    background-color: lightblue;
+  }
 
   #menu {
     flex-flow: column wrap;
