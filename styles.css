@@ -108,4 +108,26 @@
   color: transparent;
 }
 
+@media (max-width: 991.98px) {
+
+  #container {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+  
+  #total {
+    border: none;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border: 24px solid #feff03;
+  }
+
+  #lateral > div {
+    width: 97%;
+  }
+}
 
