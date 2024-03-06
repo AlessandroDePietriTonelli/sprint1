@@ -84,7 +84,7 @@
 #articles {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: stretch;
   background-color: #4e4e6a;
   flex-grow: 2;
 }
@@ -113,7 +113,7 @@
 #lateral > div {
   background-color: #feea85;
   color: transparent;
-  width: 90%;
+  flex-grow: 1;
   margin: 10px;
 }
 
@@ -134,8 +134,7 @@
 }
 
 @media (max-width: 991.98px) {
-
-  body{
+  body {
     background-color: bisque;
   }
 
@@ -143,7 +142,7 @@
     border-top: 0px;
     border-bottom: 0px;
   }
-  
+
   #total {
     border: none;
   }
@@ -156,38 +155,34 @@
   }
 
   #lateral > div {
-    width: 97%;
+    flex-grow: 1;
   }
 }
 
 @media (max-width: 575.98px) {
-
-  body{
+  body {
     background-color: lightblue;
   }
 
   #menu {
     flex-flow: column wrap;
     justify-content: flex-start;
-  }
-
-  #menu > div {
-    width: 90%;
+    align-items: stretch;
   }
 
   #content {
-
     flex-direction: column;
   }
 
   #articles {
     flex-flow: column wrap;
-
   }
+
   #articles > article {
-    width: 90%;
-  
+    width: auto;
   }
 
+  #lateral {
+    align-items: stretch;
+  }
 }
-
